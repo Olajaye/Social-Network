@@ -1,0 +1,45 @@
+.preview {
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  background-color: rgb(241, 237, 237);
+  color: rgb(10, 10, 10);
+}
+
+.previewWrapper {
+  padding: 10px;
+}
+
+.previewWrapper {
+  padding: 10px;
+}
+
+.previewCenter {
+  margin: 20px 0;
+}
+
+.previewImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.previewBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.removeButton {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}

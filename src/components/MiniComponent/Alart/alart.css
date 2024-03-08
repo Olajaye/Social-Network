@@ -1,0 +1,58 @@
+.loginAlart {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.toast {
+  width: 300px;
+  height: 60px;
+  padding: 0 15px;
+  position: relative;
+  background: white;
+  font-weight: 500;
+  box-shadow: 0 0 6px;
+  display: flex;
+  align-items: center;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.toast .sucess::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  right: -0;
+  background-color: rgb(95, 255, 47);
+  animation: anim 5s linear forwards;
+}
+
+.toast .loss::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  right: -0;
+  background-color: rgb(255, 47, 47);
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
